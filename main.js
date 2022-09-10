@@ -1,7 +1,7 @@
 function playSound(audioSelector){
     const element = document.querySelector(audioSelector);
 
-    if (element != null && element.element.localName === 'audio'){
+    if (element != null && element.localName === 'audio'){
         element.play();
     } else {
         alert('Elemento não encontrado');
